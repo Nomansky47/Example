@@ -1,0 +1,14 @@
+﻿<Window x:Class="Example.View.User.DateChangingPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Example.View.User"
+        mc:Ignorable="d"
+        Title="DateChangingPage" Height="450" Width="800" Background="DarkGray">
+    <Grid>
+        <TextBlock Text="Введите дату, на который перенести дату спектакля" Margin="0,0,0,282" Height="42" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="400"/>
+        <TextBox x:Name="DateText" Margin="0,0,254,0" Height="52"  VerticalAlignment="Center" HorizontalAlignment="Right" Width="385"></TextBox>
+        <Button Content="Сохранить " Click="Save" Margin="0,0,315,92" HorizontalAlignment="Right" Width="263" Height="58" VerticalAlignment="Bottom"></Button>
+    </Grid>
+</Window>

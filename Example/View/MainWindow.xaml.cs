@@ -1,5 +1,7 @@
 ﻿using Example.Data;
 using Example.View;
+using Example.View.Admin;
+using Example.View.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +28,14 @@ namespace Example
         {
             InitializeComponent();
         }
+        private void NextPage(object sender, RoutedEventArgs e)
+        {
+            var user=MyContext.Get().Users.First();
+            CurrentUser.UserID = user.UserID;
+            Switcher.PrevPage = this;
+            new ShowPage().Show();
+            this.Hide();
+        }
 
         private void Enter(object sender, RoutedEventArgs e)
         {
@@ -33,15 +43,15 @@ namespace Example
             if (user != null)
             {
                 CurrentUser.UserID= user.UserID;
+                Switcher.PrevPage = this;
+                this.Hide();
                 if (user.isAdmin)
                 {
-
+                    new AdminMenu().Show();
                 }
                 else
                 {
-                    Switcher.PrevPage = this;
-                    this.Hide();
-                    new ShowPage().Show();
+                    new MenuPage().Show();
                 }
             }
             else MessageBox.Show("Введен неправильный логин/пароль");

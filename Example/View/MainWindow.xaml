@@ -8,7 +8,10 @@
         Title="MainWindow" Height="500" Width="800" Background="Azure">
     <Grid>
         <TextBox x:Name="Login" Text="" Height="50" Width="220" Margin="244,0,0,332" VerticalAlignment="Bottom" HorizontalAlignment="Left" ></TextBox>
+        <TextBlock  Text="Система управления театрами" Height="50" Width="220" Margin="580,0,0,357" VerticalAlignment="Bottom" HorizontalAlignment="Left" ></TextBlock>
+        <TextBlock  Text="Краснокутский Никита Андреевич ПКС-404" Height="50" Width="220" Margin="580,0,0,302" VerticalAlignment="Bottom" HorizontalAlignment="Left" ></TextBlock>
         <TextBox x:Name="Password" Text="" Width="220" Margin="0,0,336,256" Height="43" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
-        <Button  Content="Войти" Margin="0,280,336,0" Height="50" Width="220" Click="Enter" VerticalAlignment="Top" HorizontalAlignment="Right"></Button>
+        <Button  Content="Пример без входа" Margin="580,0,0,0" Height="50" Width="220" Click="NextPage" VerticalAlignment="Center" HorizontalAlignment="Left"></Button>
+        <Button  Content="Войти" Margin="0,267,336,0" Height="50" Width="220" Click="Enter" VerticalAlignment="Top" HorizontalAlignment="Right"></Button>
     </Grid>
 </Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="Example.View.User.ShowPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="ShowPage" Height="450" Width="800" >
+    <Grid>
+        <Button Content="Назад" Click="Back" Margin="0,0,553,350" HorizontalAlignment="Right" Width="209" Height="54" VerticalAlignment="Bottom"></Button>
+        <DataGrid  IsReadOnly="True" AutoGenerateColumns="False" x:Name="MyGrid" HorizontalAlignment="Left" Width="790" Height="328" VerticalAlignment="Bottom" Margin="10,0,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Play.PlayName}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding RDate}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding RTime}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Click="DateChange" Content="Перенос даты"></Button>
+                                <Button Click="TicketBuy" Content="Купить билет"></Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

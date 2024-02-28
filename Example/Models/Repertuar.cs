@@ -10,15 +10,13 @@ namespace Example
     public partial class Repertuar
     {
         [Key]
-        [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int RepertuarID { get; set; }
+        [Required]
         public int PlayID { get; set; }
 
-        [Key]
         [Column(Order = 1, TypeName = "date")]
         public DateTime RDate { get; set; }
 
-        [Key]
         [Column(Order = 2)]
         public TimeSpan RTime { get; set; }
 

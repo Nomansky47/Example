@@ -9,6 +9,7 @@ namespace Example
     [Table("Ticket")]
     public partial class Ticket
     {
+        [Key]
         public int TicketID { get; set; }
 
         [Column(TypeName = "date")]

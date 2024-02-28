@@ -1,0 +1,18 @@
+﻿<Window x:Class="Example.View.User.TicketBuyPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Example.View.User"
+        mc:Ignorable="d"
+        Title="TicketBuyPage" Height="450" Width="800">
+    <Grid Background="Gray">
+        <TextBlock Text="Карта" Margin="0,0,665,224" HorizontalAlignment="Right" Width="95" Height="45" VerticalAlignment="Bottom"></TextBlock>
+        <TextBox x:Name="Trow" Margin="0,262,569,0" Height="39" HorizontalAlignment="Right" Width="91" VerticalAlignment="Top"/>
+        <TextBox x:Name="CardNumber" Margin="0,0,0,217" Height="39" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="520"></TextBox>
+        <Button Content="Купить" Margin="0,317,258,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Width="263" Click="Save"></Button>
+        <TextBox x:Name="Tseat" Margin="309,262,0,0" Height="39" HorizontalAlignment="Left" Width="91" VerticalAlignment="Top"/>
+        <TextBlock Text="Row" Margin="0,262,695,0" HorizontalAlignment="Right" Width="95" Height="45" VerticalAlignment="Top"/>
+        <TextBlock Text="Seat" Margin="432,262,0,139" HorizontalAlignment="Left" Width="52"/>
+    </Grid>
+</Window>

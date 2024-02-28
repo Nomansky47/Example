@@ -13,22 +13,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Example.View
+namespace Example.View.User
 {
-    /// <summary>
-    /// Логика взаимодействия для ShowPage.xaml
-    /// </summary>
-    public partial class ShowPage : Window
+    public partial class MenuPage : Window
     {
-        public ShowPage()
+        public MenuPage()
         {
             InitializeComponent();
-            MyGrid.ItemsSource = MyContext.Get().Play.ToList();
         }
-        private void Back (object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            Switcher.PrevPage.Show();
-        }
+
     }
 }

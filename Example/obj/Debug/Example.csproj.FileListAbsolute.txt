@@ -98,5 +98,13 @@ D:\GitHub\Example\Example\obj\Debug\Example.csproj.CoreCompileInputs.cache
 D:\GitHub\Example\Example\obj\Debug\Example.csproj.CopyComplete
 D:\GitHub\Example\Example\obj\Debug\Example.exe
 D:\GitHub\Example\Example\obj\Debug\Example.pdb
-D:\GitHub\Example\Example\obj\Debug\View\ShowPage.g.cs
-D:\GitHub\Example\Example\obj\Debug\View\ShowPage.baml
+D:\GitHub\Example\Example\obj\Debug\View\User\ShowPage.baml
+D:\GitHub\Example\Example\obj\Debug\View\Admin\AdminMenu.g.cs
+D:\GitHub\Example\Example\obj\Debug\View\User\DateChangingPage.g.cs
+D:\GitHub\Example\Example\obj\Debug\View\User\MenuPage.g.cs
+D:\GitHub\Example\Example\obj\Debug\View\User\ShowPage.g.cs
+D:\GitHub\Example\Example\obj\Debug\View\User\TicketBuyPage.g.cs
+D:\GitHub\Example\Example\obj\Debug\View\Admin\AdminMenu.baml
+D:\GitHub\Example\Example\obj\Debug\View\User\DateChangingPage.baml
+D:\GitHub\Example\Example\obj\Debug\View\User\MenuPage.baml
+D:\GitHub\Example\Example\obj\Debug\View\User\TicketBuyPage.baml

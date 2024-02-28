@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\Example\Example\App.xaml
-21068307999
+6-1632302437
 
-15-1974227293
+191509477567
 5871174569
-View\MainWindow.xaml;View\ShowPage.xaml;
+View\Admin\AdminMenu.xaml;View\MainWindow.xaml;View\User\DateChangingPage.xaml;View\User\MenuPage.xaml;View\User\ShowPage.xaml;View\User\TicketBuyPage.xaml;
 
 True
 
