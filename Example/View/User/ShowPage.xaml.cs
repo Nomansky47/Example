@@ -21,7 +21,6 @@ namespace Example.View.User
         public ShowPage()
         {
             InitializeComponent();
-            MyGrid.ItemsSource = MyContext.Get().Repertuar.ToList();
         }
         private void Back (object sender, RoutedEventArgs e)
         {
@@ -43,6 +42,12 @@ namespace Example.View.User
             Switcher.PrevPage = this;
             this.Hide();
             new DateChangingPage(CurrentPlayID).Show();
+        }
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            MyGrid.ItemsSource = null;
+            MyGrid.ItemsSource = MyContext.Get().Repertuar.ToList();
         }
     }
 }

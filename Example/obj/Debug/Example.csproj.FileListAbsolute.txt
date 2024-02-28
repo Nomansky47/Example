@@ -108,3 +108,5 @@ D:\GitHub\Example\Example\obj\Debug\View\Admin\AdminMenu.baml
 D:\GitHub\Example\Example\obj\Debug\View\User\DateChangingPage.baml
 D:\GitHub\Example\Example\obj\Debug\View\User\MenuPage.baml
 D:\GitHub\Example\Example\obj\Debug\View\User\TicketBuyPage.baml
+D:\GitHub\Example\Example\obj\Debug\View\User\TicketsShowPage.g.cs
+D:\GitHub\Example\Example\obj\Debug\View\User\TicketsShowPage.baml

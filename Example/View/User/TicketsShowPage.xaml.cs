@@ -1,5 +1,4 @@
-﻿using Example.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,21 +14,20 @@ using System.Windows.Shapes;
 
 namespace Example.View.User
 {
-    public partial class MenuPage : Window
+    /// <summary>
+    /// Логика взаимодействия для TicketsShowPage.xaml
+    /// </summary>
+    public partial class TicketsShowPage : Window
     {
-        public MenuPage()
+        public TicketsShowPage()
         {
             InitializeComponent();
         }
 
-        private void Tickets(object sender, RoutedEventArgs e)
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            new TicketsShowPage().Show();
-        }
-
-        private void Spectacles(object sender, RoutedEventArgs e)
-        {
-            new ShowPage().Show();
+            MyGrid.ItemsSource = null;
+            MyGrid.ItemsSource = MyContext.Get().Ticket.ToList();
         }
     }
 }

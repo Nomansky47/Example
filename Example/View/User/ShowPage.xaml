@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="ShowPage" Height="450" Width="800" >
+        Title="ShowPage" Height="450" Width="800" IsVisibleChanged="Window_IsVisibleChanged">
     <Grid>
         <Button Content="Назад" Click="Back" Margin="0,0,553,350" HorizontalAlignment="Right" Width="209" Height="54" VerticalAlignment="Bottom"></Button>
         <DataGrid  IsReadOnly="True" AutoGenerateColumns="False" x:Name="MyGrid" HorizontalAlignment="Left" Width="790" Height="328" VerticalAlignment="Bottom" Margin="10,0,0,0">

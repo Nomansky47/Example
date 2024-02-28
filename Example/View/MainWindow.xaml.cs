@@ -33,7 +33,7 @@ namespace Example
             var user=MyContext.Get().Users.First();
             CurrentUser.UserID = user.UserID;
             Switcher.PrevPage = this;
-            new ShowPage().Show();
+            new MenuPage().Show();
             this.Hide();
         }
 

@@ -7,14 +7,7 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="149*"/>
-            <RowDefinition Height="68*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="213*"/>
-            <ColumnDefinition Width="187*"/>
-        </Grid.ColumnDefinitions>
-        <Button Content="" Margin="277,272,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Left" Width="293" Height="55" VerticalAlignment="Top"></Button>
+        <Button Click="Tickets" Content="Билеты" Margin="277,0,0,0" HorizontalAlignment="Left" Width="293" Height="55" VerticalAlignment="Center"/>
+        <Button Click="Spectacles"  Content="Спектакли" Margin="277,272,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Left" Width="293" Height="55" VerticalAlignment="Top"></Button>
     </Grid>
 </Window>
